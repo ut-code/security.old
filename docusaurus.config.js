@@ -17,7 +17,7 @@ const config = {
   tagline: "ut.code(); 第74回駒場祭企画 ハッカーになろう",
   // url は要変更
   url: "https://kf74.utcode.net",
-  baseUrl: "/",
+  baseUrl: "/hacker",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
   i18n: {
@@ -32,7 +32,7 @@ const config = {
         docs: {
           sidebarPath: "./hacker/sidebars.js",
           path: "hacker",
-          routeBasePath: "hacker",
+          routeBasePath: "/",
         },
         blog: false,
         theme: {
