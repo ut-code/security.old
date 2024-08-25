@@ -15,7 +15,8 @@ import rehypeKatex from "rehype-katex";
 const config = {
   title: "ハッカーになろう",
   tagline: "ut.code(); 第74回駒場祭企画 ハッカーになろう",
-  url: "https://hacker.utcode.net",
+  // url は要変更
+  url: "https://kf74.utcode.net",
   baseUrl: "/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
