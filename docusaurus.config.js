@@ -14,12 +14,11 @@ import rehypeKatex from "rehype-katex";
 /** @type {import("@docusaurus/types").Config} */
 const config = {
   title: "ハッカーになろう",
-  tagline: "ut.code(); 駒場祭/五月祭企画",
-  favicon: "/img/favicon.ico",
-  url: "https://todo.utcode.net", // TODO: change this
+  tagline: "ut.code(); 第74回駒場祭企画 ハッカーになろう",
+  url: "https://hacker.utcode.net",
   baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
   i18n: {
     defaultLocale: "ja",
     locales: ["ja"],
@@ -30,13 +29,13 @@ const config = {
       /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         docs: {
-          sidebarPath: "./security/sidebars.js",
-          path: "./security",
-          routeBasePath: "/",
+          sidebarPath: "./hacker/sidebars.js",
+          path: "hacker",
+          routeBasePath: "hacker",
         },
         blog: false,
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./hacker/css/custom.css",
         },
       }),
     ],
@@ -54,10 +53,10 @@ const config = {
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
     ({
       navbar: {
-        title: "ハッカーになろう by ut.code();",
+        title: "ハッカーになろう",
         logo: {
           alt: "ut.code();",
-          src: "img/logo.svg",
+          // src: "img/logo.svg",
         },
         items: [
           {
