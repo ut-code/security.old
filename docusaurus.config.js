@@ -57,7 +57,7 @@ const config = {
         title: "ハッカーになろう",
         logo: {
           alt: "ut.code();",
-          // src: "img/logo.svg",
+          src: "img/logo.svg",
         },
         items: [
           {
