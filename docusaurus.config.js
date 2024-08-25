@@ -14,12 +14,12 @@ import rehypeKatex from "rehype-katex";
 /** @type {import("@docusaurus/types").Config} */
 const config = {
   title: "ハッカーになろう",
-  tagline: "ut.code(); 駒場祭/五月祭企画",
-  favicon: "/img/favicon.ico",
-  url: "https://todo.utcode.net", // TODO: change this
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  tagline: "ut.code(); 第74回駒場祭企画 ハッカーになろう",
+  // url は要変更
+  url: "https://kf74.utcode.net",
+  baseUrl: "/hacker",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
   i18n: {
     defaultLocale: "ja",
     locales: ["ja"],
@@ -30,13 +30,13 @@ const config = {
       /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         docs: {
-          sidebarPath: "./security/sidebars.js",
-          path: "./security",
+          sidebarPath: "./hacker/sidebars.js",
+          path: "hacker",
           routeBasePath: "/",
         },
         blog: false,
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./hacker/css/custom.css",
         },
       }),
     ],
@@ -54,7 +54,7 @@ const config = {
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
     ({
       navbar: {
-        title: "ハッカーになろう by ut.code();",
+        title: "ハッカーになろう",
         logo: {
           alt: "ut.code();",
           src: "img/logo.svg",
